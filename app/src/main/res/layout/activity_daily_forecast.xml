@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                tools:context="io.seth_k.stormy.ui.DailyForecastActivity"
+                style="@style/activity_background">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@android:id/list"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:stackFromBottom="false"
+        android:layout_below="@+id/thisWeekLabel"
+        android:layout_above="@+id/locationLabel"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_daily_forecast_data"
+        android:id="@android:id/empty"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/daily_forecast_title"
+        android:id="@+id/thisWeekLabel"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFFFF"
+        android:textSize="30sp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hardcoded_location_label"
+        android:id="@+id/locationLabel"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:linksClickable="false"
+        android:textColor="#FFFFFFFF"
+        android:textSize="@dimen/label_text_size"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>
